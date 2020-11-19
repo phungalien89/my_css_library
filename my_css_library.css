@@ -56,6 +56,21 @@ body{
 .pt-5, .py-5{
     padding-top: 3em !important;
 }
+.pb-1, .py-1{
+    padding-top: 0.25em !important;
+}
+.pb-2, .py-2{
+    padding-top: 0.5em !important;
+}
+.pb-3, .py-3{
+    padding-top: 1em !important;
+}
+.pb-4, .py-4{
+    padding-top: 1.5em !important;
+}
+.pb-5, .py-5{
+    padding-top: 3em !important;
+}
 
 .row{
     display: flex;
@@ -67,6 +82,14 @@ body{
 .col-md-9{
     flex-basis: 75%;
 }
+/*POSITION setting*/
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+/*End of POSITION setting*/
 
 /*FLEX setting*/
 .d-flex{
@@ -149,7 +172,99 @@ body{
     box-shadow: 0px 0px 0px 0.25em rgba(220, 53, 69, 0.5);
 }
 /*End of BUTTON setting*/
+/*WIDTH setting*/
+.w-25{
+    width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 75%;
+}
+.w-100{
+    width: 100%;
+}
+/*End of WIDTH setting*/
+/*BORDER setting*/
+.border{
+    border: 1px solid var(--theme);
+}
+/*End of BORDER setting*/
 
+/*ROUNDED setting*/
+.rounded-circle{
+    border-radius: 50% !important;
+}
+.rounded-pill{
+    border-radius: 100px !important;
+}
+.hover-shadown-outline{
+    transition: all var(--transition-time) ease;
+}
+.hover-shadown-outline:hover{
+    box-shadow: 0px 0px 10px 0.5vw var(--theme);
+}
+.animate-spin-slow{
+    animation: ani-spin 10s linear infinite;
+}
+@keyframes ani-spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+/*End of ROUNDED setting*/
+
+/*TEXT setting*/
+/*End of TEXT setting*/
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.text-justify{
+    text-align: justify !important;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-lowercase{
+    text-transform: lowercase;
+}
+.text-theme{
+    color: var(--theme);
+}
+.text-primary{
+    color: var(--primary);
+}
+.text-info{
+    color: var(--info);
+}
+.text-success{
+    color: var(--success);
+}
+.text-warning{
+    color: var(--warning);
+}
+.text-danger{
+    color: var(--danger);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-light{
+    color: var(--light);
+}
+.font-weight-bold{
+    font-weight: bold;
+}
 /* Customizing controls */
 fieldset{
     width: 400px;
