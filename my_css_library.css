@@ -23,6 +23,7 @@
     --dark:#343a40;
     --theme: var(--cyan);
     --transition-time: 0.25s;
+    --shadow: #bbb;
 }
 body{
     font-family: Roboto, sans-serif;
@@ -93,6 +94,7 @@ body{
 .pl-3, .px-3{
     padding-left: 1em;
 }
+
 .ml-3, .mx-3{
     margin-left: 1em;
 }
@@ -110,41 +112,63 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.col-md-3{
-    flex-basis: 25%;
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{
+    flex-basis: 100%;
 }
-.col-md-4{
-    width: 100%;
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    flex-basis: 100%;
 }
-.col-md-9{
-    flex-basis: 75%;
-}
-.col-lg-3{
-    width: 100%;
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+    flex-basis: 100%;
 }
 @media (min-width: 576px){
     .col-sm-3{
         flex-basis: 25%;
     }
+    .col-sm-8{
+        flex-basis: 66.6666%;
+        margin: 0 auto;
+    }
 }
 @media (min-width: 768px){
+    .col-md-3{
+        flex-basis: 25%;
+    }
     .col-md-4{
         flex-basis: 33.3333%;
+    }
+    .col-md-6{
+        flex-basis: 50%;
+    }
+    .d-md-block{
+        display: block !important;
     }
 }
 @media (min-width: 992px){
     .col-lg-3{
         flex-basis: 25%;
     }
+    .col-lg-4{
+        flex-basis: 33.3333%;
+    }
+    .d-lg-block{
+        display: block !important;
+    }
 }
 /*POSITION setting*/
 .position-relative{
-    position: relative;
+    position: relative !important;
 }
 .position-absolute{
-    position: absolute;
+    position: absolute !important;
 }
 /*End of POSITION setting*/
+
+/*DISPLAY setting*/
+.d-md-block{
+    display: none;
+}
+/*End of DISPLAY setting*/
 
 /*FLEX setting*/
 .d-flex{
@@ -254,11 +278,29 @@ body{
 .rounded-pill{
     border-radius: 100px !important;
 }
-.hover-shadown-outline{
+/*End of ROUNDED setting*/
+
+/*ANIMATION setting*/
+.hover-shadow-outline{
     transition: all var(--transition-time) ease;
 }
-.hover-shadown-outline:hover{
+.hover-shadow-outline:hover{
     box-shadow: 0px 0px 10px 0.5vw var(--theme);
+}
+.hover-scale-down{
+    transition: all var(--transition-time) ease;
+}
+.hover-scale-down:hover{
+    transform: scale(0.9);
+}
+.hover-blur{
+    transition: all var(--transition-time) ease;
+}
+.hover-blur:hover{
+    filter: blur(2px);
+}
+.shadow{
+    box-shadow: 0.25em 0.25em 0.75em 1px var(--shadow);
 }
 .animate-spin-slow{
     animation: ani-spin 10s linear infinite;
@@ -271,10 +313,12 @@ body{
         transform: rotate(359deg);
     }
 }
-/*End of ROUNDED setting*/
+/*End of ANIMATION setting*/
+
 /*CARD setting*/
 .card{
     display: flex;
+    position: relative;
     flex-direction: column;
     border-radius: 0.5em;
     border: 1px solid #bbb;
@@ -292,11 +336,19 @@ body{
     border-top-right-radius: 0.25em;
 }
 .card-body{
-    padding: 10px;
+    padding: 1.25em;
 }
 .card-footer{
     border-bottom-left-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
+}
+.stretched-link{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 /*End of CARD setting*/
 
