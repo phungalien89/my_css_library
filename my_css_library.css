@@ -92,9 +92,39 @@ body{
 .pb-5, .py-5{
     padding-bottom: 3em !important;
 }
+
+.pl-1, .px-1{
+    padding-left: 0.25em !important;
+}
+.pl-2, .px-2{
+    padding-left: 0.5em !important;
+}
 .pl-3, .px-3{
     padding-left: 1em;
 }
+.pl-4, .px-4{
+    padding-left: 1.5em;
+}
+.pl-5, .px-5{
+    padding-left: 3em;
+}
+
+.pr-1, .px-1{
+    padding-right: 0.25em !important;
+}
+.pr-2, .px-2{
+    padding-right: 0.5em !important;
+}
+.pr-3, .px-3{
+    padding-right: 1em;
+}
+.pr-4, .px-4{
+    padding-right: 1.5em;
+}
+.pr-5, .px-5{
+    padding-right: 3em;
+}
+
 .p-1{
     padding: 0.25em !important;
 }
