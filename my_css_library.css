@@ -481,6 +481,25 @@ body{
 .rounded-pill{
     border-radius: 100px !important;
 }
+.rounded-top{
+    border-top-left-radius: 0.5em !important;
+    border-top-right-radius: 0.5em !important;
+}
+.rounded-bottom{
+    border-bottom-left-radius: 0.5em !important;
+    border-bottom-right-radius: 0.5em !important;
+}
+.rounded-right{
+    border-top-right-radius: 0.5em !important;
+    border-bottom-right-radius: 0.5em !important;
+}
+.rounded-left{
+    border-top-left-radius: 0.5em !important;
+    border-bottom-left-radius: 0.5em !important;
+}
+.rounded-none, .rounded-0{
+    border-radius: 0 !important;
+}
 /*End of ROUNDED setting*/
 
 /*ANIMATION setting*/
